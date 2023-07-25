@@ -1,0 +1,532 @@
+{
+	"info": {
+		"_postman_id": "e8b90111-74fe-4bab-bd79-71971d7fd04a",
+		"name": "AWS",
+		"description": "Information about pools by zipcode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "28119393-e8b90111-74fe-4bab-bd79-71971d7fd04a"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "pools",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/api/v1/pools/:id",
+											"id": "081cef49-ae8b-4ef5-97a8-6074bc565666",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/pools/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"pools",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "00ea3890-901b-40ec-83f4-0d3038916e04",
+															"key": "id",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "d01890bf-b970-4e41-bb63-6cfe1cfc9eb6",
+													"name": "Default response for GET /api/v1/pools/{id}",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/pools/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"pools",
+																":id"
+															],
+															"variable": [
+																{
+																	"id": "00ea3890-901b-40ec-83f4-0d3038916e04",
+																	"key": "id",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": null
+												}
+											]
+										},
+										{
+											"name": "/api/v1/pools/:id",
+											"id": "796b6500-3465-4601-87f8-e10e5f94139f",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"auth": {
+													"type": "apikey",
+													"apikey": [
+														{
+															"key": "key",
+															"value": "Authorization",
+															"type": "string"
+														},
+														{
+															"key": "value",
+															"value": "{{apiKey}}",
+															"type": "string"
+														},
+														{
+															"key": "in",
+															"value": "header",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/pools/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"pools",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "2ded9d0e-6b02-45f0-89ff-50251815a258",
+															"key": "id",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "93f1b872-97d8-4966-999d-d1ccc70725a2",
+													"name": "Default response for DELETE /api/v1/pools/{id}",
+													"originalRequest": {
+														"auth": {
+															"type": "apikey",
+															"apikey": [
+																{
+																	"key": "key",
+																	"value": "Authorization",
+																	"type": "string"
+																},
+																{
+																	"key": "value",
+																	"value": "{{apiKey}}",
+																	"type": "string"
+																},
+																{
+																	"key": "in",
+																	"value": "header",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/pools/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"pools",
+																":id"
+															],
+															"variable": [
+																{
+																	"id": "2ded9d0e-6b02-45f0-89ff-50251815a258",
+																	"key": "id",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": null
+												}
+											]
+										},
+										{
+											"name": "/api/v1/pools/:id",
+											"id": "c4c60723-4387-4623-a103-7e981f0a8806",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"auth": {
+													"type": "apikey",
+													"apikey": [
+														{
+															"key": "key",
+															"value": "Authorization",
+															"type": "string"
+														},
+														{
+															"key": "value",
+															"value": "{{apiKey}}",
+															"type": "string"
+														},
+														{
+															"key": "in",
+															"value": "header",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PATCH",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/pools/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"pools",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "8e4ba447-1158-4d47-823e-9214afd2b96d",
+															"key": "id",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "0cddd271-1ae9-404d-a15c-3fb1eb70cf35",
+													"name": "Default response for PATCH /api/v1/pools/{id}",
+													"originalRequest": {
+														"auth": {
+															"type": "apikey",
+															"apikey": [
+																{
+																	"key": "key",
+																	"value": "Authorization",
+																	"type": "string"
+																},
+																{
+																	"key": "value",
+																	"value": "{{apiKey}}",
+																	"type": "string"
+																},
+																{
+																	"key": "in",
+																	"value": "header",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "PATCH",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/pools/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"pools",
+																":id"
+															],
+															"variable": [
+																{
+																	"id": "8e4ba447-1158-4d47-823e-9214afd2b96d",
+																	"key": "id",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": null
+												}
+											]
+										}
+									],
+									"id": "cd9cbb13-b617-4842-878e-e4d139dfa30a"
+								},
+								{
+									"name": "/api/v1/pools",
+									"id": "58f0f171-3ee6-4d38-9c98-dd4a31119b78",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/pools",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"pools"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "fd2e6c5c-883f-4e57-a13e-45e8e3930a25",
+											"name": "Default response for GET /api/v1/pools",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/pools",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"pools"
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "/api/v1/pools",
+									"id": "bf717d23-21f2-4e85-a156-2be6bed5c916",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "Authorization",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "{{apiKey}}",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/pools",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"pools"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "70513789-b805-47b2-8dd1-d538c2119f50",
+											"name": "Default response for POST /api/v1/pools",
+											"originalRequest": {
+												"auth": {
+													"type": "apikey",
+													"apikey": [
+														{
+															"key": "key",
+															"value": "Authorization",
+															"type": "string"
+														},
+														{
+															"key": "value",
+															"value": "{{apiKey}}",
+															"type": "string"
+														},
+														{
+															"key": "in",
+															"value": "header",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/pools",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"pools"
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": null
+										}
+									]
+								}
+							],
+							"id": "c4c60921-c431-478c-a129-b07575112613"
+						},
+						{
+							"name": "fields",
+							"item": [
+								{
+									"name": "/api/v1/fields",
+									"id": "66ae668f-cdf2-47a4-9ae0-5f67cb8fe4e8",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/fields",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"fields"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "381cf27e-71b9-4a04-9091-411e45fca18e",
+											"name": "Default response for GET /api/v1/fields",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/fields",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"fields"
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": null
+										}
+									]
+								}
+							],
+							"id": "6e5bccf3-569a-4b6a-9dc1-0980a4f443dc"
+						}
+					],
+					"id": "2745d9fe-2699-4bdf-aeff-1ee597b37645"
+				}
+			],
+			"id": "638614e1-0628-4c60-9294-af486bc05d4c"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "699edf20-446d-44d0-89ce-ee810a98d807",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "97761caa-181c-4d72-b09b-46bb2f6e7708",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "2fb70e07-6178-41c9-92dc-e19ee99a431d",
+			"key": "baseUrl",
+			"value": "https://rbjxfkoc28.execute-api.us-east-2.amazonaws.com/{{basePath}}"
+		}
+	]
+}
